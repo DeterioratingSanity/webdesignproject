@@ -19,7 +19,7 @@
 
 			li {
   				color: #fff;
-  				background: rgb(220,220,220);
+  				background: #FDFFFC;
   				display: block;
   				float: left;
   				padding: 1rem;
@@ -30,16 +30,16 @@
 			}
   
 			li a {
-  				color: black;
+  				color: #011627;
 			}
 
 			li:hover a:hover {
-				color: white;
+				color: #FDFFFC;
 			}
 
 			li:hover {
-  				background: rgb(32,178,170);
-				color: white;
+  				background: #FF9F1C;
+				color: #FDFFFC;
   				cursor: pointer;
 			}
 
@@ -64,28 +64,44 @@
 
 			ul li ul li {
   				clear: both;
-  				width: 100%;
+  				width: 70%;
 			}
 
 
 			#header {
-				background-color: rgb(112,128,144);
-				margin: 0;
-				padding: 15px;
-				position: relative;
+				background-color: #011627;
+				margin: 0 auto;
+				padding: 25px;
+				position: sticky;
 				top: 0;
-				border-bottom-left-radius: 90px 30px;
-				border-bottom-right-radius: 90px 30px;
 			}
 			#name {
-				color: white;
+				color: #FDFFFC;
 				text-align: center;
 				font-family: "DejaVu Sans Mono", monospace;
 			}
 	 		#dirul {
 				display: table;
 				margin: 0 auto;
-				text-align: left;
+				text-align: center;
+			}
+
+			.parallax {
+			background-image: url("gidock.jpg");
+			min-height: 600px;
+
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			}
+			#cont {
+			text-align: center;
+			font-family: "DejaVu Sans Mono", monospace;
+			font-size: 16pt;
+			color: #FDFFFC;
+			margin: 0;
+			background-color: #011627;
 			}
   </style>
   
@@ -98,9 +114,12 @@
 		<div id="directorydiv">
 		<ul id="dirul">
 		<li><a id="here" class="directory" href="#">Home</a></li>
-		<li><a class="directory" href="work.html">Our Work</a>
+		<li><a class="directory" href="prog.html">Programs</a>
 			<ul class="dropdown">
-				<li><a href="pers.html">Personal</a></li>
+				<li><a href="jun.html">Junior</a></li>
+				<li><a href="you.html">Youth</a></li>
+				<li><a href="adu.html">Adult</a></li>
+				<li><a href="sen.html">Senior</a></li>
 			</ul>
 		</li>
 		<li><a class="directory" href="reviews.html">Testimonials</a></li>
@@ -111,5 +130,15 @@
 		</div>
 		</div>
 	
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<div class="parallax"></div>
+
+		<p id="cont"><br>A local company, Golden Isles Web Design can help anyone build and develop a web presence that suits the need of their business or endeavor.
+		Our attachment to the community has inspired us to develop a study course for all ages- be they students enrolled in Glynn Counties Schools, or adult residents
+		who wish to learn the principles of coding.<br>
+		To enquire about business or educational opportunities, either call us at (000) 000-0000 or send us an email through our Contact Us section, found above.
+		We are excited to hear from you.
+		<br><br></p>
+				
+
+		<div class="parallax"></div>
 </body>
