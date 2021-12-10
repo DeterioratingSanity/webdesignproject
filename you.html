@@ -1,0 +1,148 @@
+<head>
+
+  <style>
+  body {
+				margin: 0;
+			}
+			a {
+  				text-decoration: none;
+			}
+
+			
+
+			ul {
+ 			 	background: rgb(220,220,220);
+  				list-style: none;
+  				margin: 0;
+  				padding-left: 0;
+			}
+
+			li {
+  				color: #fff;
+  				background: #FDFFFC;
+  				display: block;
+  				float: left;
+  				padding: 1rem;
+  				position: relative;
+  				text-decoration: none;
+				font-family: "DejaVu Sans Mono", monospace;
+  				transition-duration: 0.5s;
+			}
+  
+			li a {
+  				color: #011627;
+			}
+
+			li:hover a:hover {
+				color: #FDFFFC;
+			}
+
+			li:hover {
+  				background: #FF9F1C;
+				color: #FDFFFC;
+  				cursor: pointer;
+			}
+
+			ul li ul {
+  				background: rgb(220,220,220);
+  				visibility: hidden;
+  				opacity: 0;
+  				min-width: 5rem;
+  				position: absolute;
+  				transition: all 0.5s ease;
+  				margin-top: 1rem;
+  				left: 0;
+  				display: none;
+			}
+
+			ul li:hover > ul,
+			ul li ul:hover {
+  				visibility: visible;
+  				opacity: 1;
+  				display: block;
+			}
+
+			ul li ul li {
+  				clear: both;
+  				width: 70%;
+			}
+
+
+			#header {
+				background-color: #011627;
+				margin: 0 auto;
+				padding: 25px;
+				position: sticky;
+				top: 0;
+			}
+			#name {
+				color: #FDFFFC;
+				text-align: center;
+				font-family: "DejaVu Sans Mono", monospace;
+			}
+	 		#dirul {
+				display: table;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			.parallax {
+			background-image: url("gidock.jpg");
+			min-height: 600px;
+
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			}
+			#cont {
+			text-align: center;
+			font-family: "DejaVu Sans Mono", monospace;
+			font-size: 16pt;
+			color: #FDFFFC;
+			margin: 0;
+			background-color: #011627;
+			}
+			.subdir {
+			color: #FF9F1C;
+			}
+  </style>
+  
+</head>
+
+<body>
+  <div id="header">
+		<h1 id="name">Golden Isles Web Services</h1>
+
+		<div id="directorydiv">
+		<ul id="dirul">
+		<li><a id="here" class="directory" href="index.html">Home</a></li>
+		<li><a class="directory" href="prog.html">Programs</a>
+			<ul class="dropdown">
+				<li><a href="#">Junior</a></li>
+				<li><a href="you.html">Youth</a></li>
+				<li><a href="adu.html">Adult</a></li>
+				<li><a href="sen.html">Senior</a></li>
+			</ul>
+		</li>
+		<li><a class="directory" href="reviews.html">Testimonials</a></li>
+		<li><a class="directory" href="rates.html">Rates</a></li>
+		<li><a class="directory" href="contactus.html">Contact Us</a></li>
+		</ul>
+		
+		</div>
+		</div>
+	
+		<div class="parallax"></div>
+
+		<p id="cont"><br>
+		For teen students, three course varieties will be provided. A Code Art and Animation course, building up JavaScript understanding for the creation of artwork,
+		will be conducted. A Computer Basics course which covers the use of many common software programs and a guided disassembly of a computer, teaching enrollees about
+		both soft- and hardware behaviors, is presently offerred at a discounted rate in celebration of the holiday season. A dedicated course for coding a simple videogame
+		is also offerred, and the student will produce a single project outcome.
+		<img src="teen.jpg" alt="teen coding">
+		<br><br></p>
+				
+
+		<div class="parallax"></div>
+</body>
